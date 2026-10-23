@@ -1,0 +1,28 @@
+{
+  "version": "0.1.0",
+  "distribution_revision": "public-1",
+  "file": "deepseek-harness-remote-0.1.0.zip",
+  "bytes": 35299,
+  "sha256": "b46203a7721a15a412d2392bd5018bd3dec006b098f043bac1fefbef3dfbe6e0",
+  "runtime_files": 13,
+  "runtime_bytes_unchanged": true,
+  "files": [
+    "PACKAGE-CONTENTS.json",
+    "README.md",
+    "bin/dsh-remote.mjs",
+    "docs/DEPLOYMENT.md",
+    "lib/config.mjs",
+    "lib/connector.mjs",
+    "lib/gateway.mjs",
+    "lib/platform.mjs",
+    "lib/private-files.mjs",
+    "lib/profile.mjs",
+    "lib/runner.mjs",
+    "lib/services.mjs",
+    "lib/tls-front.mjs",
+    "manage.cmd",
+    "manage.command",
+    "manage.sh",
+    "package.json"
+  ]
+}
