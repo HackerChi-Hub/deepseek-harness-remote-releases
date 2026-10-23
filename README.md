@@ -14,6 +14,62 @@
 
 公开的是运行便携包和使用说明，开发仓库与提交历史保持私有。包中的 JavaScript 运行脚本可以被下载者查看；本工具未以“完整开发仓库开源”名义发布。
 
+**请下载上方明确命名的 `deepseek-harness-remote-0.1.0.zip`。** GitHub 自动列出的 `Source code (zip)` / `Source code (tar.gz)` 是本下载仓库的文档快照，不是软件运行包。
+
+## 图文上手：从下载到实际回复
+
+下面八张图按使用顺序排列。发行页、配对页和回复结果来自真实网页；命令部分是实际运行记录的只读排版，已在图中标明，不是原生终端截图。截图不含可用配对码、证书私钥或真实入口域名，也没有顶部电脑操作控制条。
+
+### 1．找到便携包与校验文件
+
+打开[发行页](https://github.com/HackerChi-Hub/deepseek-harness-remote-releases/releases/tag/v0.1.0)，在附件区下载第一个便携包和第二个校验文件。下图为实际公开页面。
+
+![公开发行页中可运行的便携包与校验文件](https://raw.githubusercontent.com/HackerChi-Hub/deepseek-harness-remote-releases/main/screenshots/01-release-download.jpg)
+
+### 2．校验下载，并找到三平台启动文件
+
+本次匿名下载返回 200，校验值与 ZIP 完整性均一致。解压后按系统打开 `manage.command`、`manage.cmd` 或 `manage.sh`。下图是实际下载及压缩包记录排版。
+
+![实际下载校验记录与解压后的启动入口](https://raw.githubusercontent.com/HackerChi-Hub/deepseek-harness-remote-releases/main/screenshots/02-download-verification.jpg)
+
+### 3．打开中文菜单
+
+首次连接按 **2 挂载 → 3 配置 → 4 启动 → 6 诊断 → 5 配对**。下图由真实菜单输出排版；菜单 0 退出界面时保留后台。
+
+![真实中文管理菜单输出排版](https://raw.githubusercontent.com/HackerChi-Hub/deepseek-harness-remote-releases/main/screenshots/03-management-menu.jpg)
+
+### 4．挂载正在使用的配置，保存 HTTPS 入口
+
+下图在独立临时目录中实际执行，路径已脱敏，`remote.example.test` 是不能直接使用的文档示例。保存入口并不代表公网已经连通。常规代理目标为 `http://127.0.0.1:8766`；截图中的本机端口 0 是这次隔离验收申请随机空闲端口的设置。
+
+![隔离环境实际执行挂载与保存入口的输出](https://raw.githubusercontent.com/HackerChi-Hub/deepseek-harness-remote-releases/main/screenshots/04-connector-configuration.jpg)
+
+### 5．看懂诊断结果
+
+下图的临时网关确实运行，但特意没有接生产 Host，因此上游认证为 `false`。自己使用时，必须再看到 `upstream.authenticatedHTTP: true`，并确认原会话与消息收发；不能仅凭 `running: true` 判定成功。
+
+![真实隔离诊断示例，上游未连接](https://raw.githubusercontent.com/HackerChi-Hub/deepseek-harness-remote-releases/main/screenshots/05-diagnostic-example.jpg)
+
+### 6．在手机浏览器确认配对
+
+配置好自己的 HTTPS 入口后，从菜单 5 生成本人一次性连接页，使用最新完整链接。下图是软件真实配对页，来自仅回环监听的临时网关；用来展示页面，不冒充手机外网实拍。
+
+![软件实际配对网页，不展示配对码](https://raw.githubusercontent.com/HackerChi-Hub/deepseek-harness-remote-releases/main/screenshots/06-pairing-page.jpg)
+
+### 7．出现无效码提示时，重新生成完整入口
+
+下图实际提交了无效测试文本，展示真实错误提示。有效码十分钟内只能兑换一次；请勿把配对链接、二维码或 Cookie 放进问题反馈。
+
+![实际无效测试文本触发的配对错误提示](https://raw.githubusercontent.com/HackerChi-Hub/deepseek-harness-remote-releases/main/screenshots/07-pairing-error.jpg)
+
+### 8．最后验证原会话里的消息回复
+
+下图保留独立网页验收的实际消息和模型回复。它证明这次简单消息可以收发；“1 秒”是这条短消息的界面记录，不代表复杂任务速度，也不代替手机工具批准与长任务恢复验收。
+
+![独立网页验收实际收到模型回复](https://raw.githubusercontent.com/HackerChi-Hub/deepseek-harness-remote-releases/main/screenshots/08-web-message.jpg)
+
+[查看截图来源、验收范围与逐图说明](https://github.com/HackerChi-Hub/deepseek-harness-remote-releases/blob/main/docs/SCREENSHOTS.md)。完整文字教程继续见下方。
+
 ## 先在电脑上准备
 
 1. 先确认官方 Harness 在电脑端能正常打开原会话并收到模型回复。已有安装和模型继续使用，不用再下载一遍。

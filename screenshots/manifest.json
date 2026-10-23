@@ -1,0 +1,58 @@
+{
+  "version": "0.1.0",
+  "at": "2026-10-23T11:55:57.012327+08:00",
+  "count": 8,
+  "raw_screenshots_and_record_layouts_distinguished": true,
+  "usable_pairing_tokens_published": false,
+  "production_gateway_restarted": false,
+  "images": [
+    {
+      "file": "01-release-download.jpg",
+      "type": "真实公开发行网页",
+      "bytes": 110220,
+      "sha256": "660f853e5225802f3cf5c59e228e6a0c3276bf0d0dce850270c0643e251d3a65"
+    },
+    {
+      "file": "02-download-verification.jpg",
+      "type": "真实下载与文件记录排版",
+      "bytes": 60694,
+      "sha256": "938630c8513936530868b3c76f6be444c3c022da1fe01c7d52d81a9dd1212c66"
+    },
+    {
+      "file": "03-management-menu.jpg",
+      "type": "真实命令行记录排版",
+      "bytes": 45190,
+      "sha256": "2da05de94bbd60f3976c971b06100229dfe493b6894eec12539f17886d7883f7"
+    },
+    {
+      "file": "04-connector-configuration.jpg",
+      "type": "真实隔离命令行记录排版，临时路径脱敏",
+      "bytes": 63388,
+      "sha256": "e21b6ade7c174c94d3ad02e45d461087a2dd7569e929e430ed444ae95da7fc06"
+    },
+    {
+      "file": "05-diagnostic-example.jpg",
+      "type": "真实隔离诊断节选，上游未连接",
+      "bytes": 47987,
+      "sha256": "fbf87b76edf8c00a6ba5778db78c469cdcd155a95514fb1312b917a836412258"
+    },
+    {
+      "file": "06-pairing-page.jpg",
+      "type": "真实软件网页，回环临时实例",
+      "bytes": 24340,
+      "sha256": "0e45ffc3027ec4d7cd133f1772d8b7beb6051f7c1e2a79792e74aa79c9c57f03"
+    },
+    {
+      "file": "07-pairing-error.jpg",
+      "type": "真实软件网页，无效测试输入",
+      "bytes": 31000,
+      "sha256": "f05211dd256db13cf0d7336d36bc886490ee400e7a7b9aeda73cdad3c6d30908"
+    },
+    {
+      "file": "08-web-message.jpg",
+      "type": "先前独立网页真实消息回复",
+      "bytes": 25566,
+      "sha256": "74a6376fd49b9f8bc744b9324ef29f6bd249873b7f621d143920af5b295ed23e"
+    }
+  ]
+}
